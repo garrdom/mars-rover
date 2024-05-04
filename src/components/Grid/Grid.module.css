@@ -1,0 +1,10 @@
+.container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  background: url('../../images/texture.jpg') no-repeat center center;
+  border-radius: 9999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}

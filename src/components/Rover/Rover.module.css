@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.status_wrapper {
+  width: 480px;
+  height: 300px;
+  background: url('../../images/mockup.png') no-repeat top center;
+  background-size: cover;
+}
+
+.text_alert {
+  color: red;
+}
+
+.command_wrapper {
+  display: grid;
+  grid-template-areas: '. top .'
+                        'left restart right'
+                        '. bottom .';
+  grid-auto-rows: 1fr;
+  flex-shrink: 0;
+}
+
+.command_top {
+  grid-area: top;
+}
+
+.command_right {
+  grid-area: right;
+}
+
+.command_bottom {
+  grid-area: bottom;
+}
+
+.command_left {
+  grid-area: left;
+}
+
+.command_restart {
+  grid-area: restart;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  margin: 5px 0;
+}
+
+.command_restart_img {
+  width: 40px;
+  height: 40px;
+  filter: invert(1);
+}
